@@ -6,7 +6,7 @@ import tkinter as tk
 from tkinter import ttk
 
 
-APP_NAME = "Chuyển đổi tài liệu · Shadrowsily"
+APP_NAME = "Shadrovert"
 ASSETS = Path(__file__).resolve().parent / "assets"
 NAVY = "#0F1C2D"
 SURFACE = "#182A40"

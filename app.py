@@ -9,7 +9,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 from explorer_menu import IMAGE_FORMATS, IMAGE_SUFFIXES, WORD_SUFFIXES, choose_output, convert_from_explorer
-from branding import CYAN, SURFACE, TEXT, apply_theme, brand_header
+from branding import APP_NAME, CYAN, SURFACE, TEXT, apply_theme, brand_header
 
 
 MODES = {
@@ -36,7 +36,7 @@ class ConverterApp:
         body = ttk.Frame(root, padding=24)
         body.pack(fill="both", expand=True)
         brand_header(body)
-        ttk.Label(body, text="Chuyển đổi tài liệu", font=("Segoe UI", 23, "bold")).pack(anchor="w")
+        ttk.Label(body, text=APP_NAME, font=("Segoe UI", 23, "bold")).pack(anchor="w")
         ttk.Label(body, text="Word, PDF và ảnh", style="Muted.TLabel").pack(anchor="w", pady=(4, 18))
 
         self.mode = ttk.Combobox(body, values=list(MODES), state="readonly")

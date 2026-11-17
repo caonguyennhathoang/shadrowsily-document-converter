@@ -8,9 +8,9 @@
          xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
          IgnorableNamespaces="uap uap10 com desktop4 desktop5 rescap">
   <Identity Name="ChuyenDoiTaiLieu.Local" Publisher="CN=ChuyenDoiTaiLieu, OID.2.25.311729368913984317654407730594956997722=1"
-            Version="1.0.9.0" ProcessorArchitecture="x64" />
+            Version="1.0.10.0" ProcessorArchitecture="x64" />
   <Properties>
-    <DisplayName>Chuyển đổi tài liệu · Shadrowsily</DisplayName>
+    <DisplayName>Shadrovert</DisplayName>
     <PublisherDisplayName>Shadrowsily</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -22,7 +22,7 @@
   </Dependencies>
   <Applications>
     <Application Id="Converter" Executable="ChuyenDoiTaiLieu.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="packagedClassicApp">
-      <uap:VisualElements DisplayName="Chuyển đổi tài liệu · Shadrowsily" Description="Chuyển đổi Word, PDF và ảnh — Shadrowsily"
+      <uap:VisualElements DisplayName="Shadrovert" Description="Chuyển đổi Word, PDF và ảnh — Shadrowsily"
                           BackgroundColor="transparent" Square150x150Logo="Assets\Square150.png" Square44x44Logo="Assets\Square44.png" />
       <Extensions>
         <com:Extension Category="windows.comServer">

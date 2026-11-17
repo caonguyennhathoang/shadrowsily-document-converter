@@ -24,7 +24,7 @@ def main() -> None:
         )
         compiled = stage / "setup.res"
         run([str(cxx.with_name("llvm-rc.exe")), "/fo", str(compiled), str(resource)], check=True)
-        output = stage / "CaiDat-ChuyenDoiTaiLieu.exe"
+        output = stage / "CaiDat-Shadrovert.exe"
         run([
             str(cxx), "-std=c++17", "-O2", "-Wall", "-Wextra", "-static", "-municode", "-mwindows",
             str(source / "setup.cpp"), str(compiled), "-o", str(output),

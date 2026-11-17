@@ -98,7 +98,7 @@ public:
     ULONG STDMETHODCALLTYPE Release() override { return release(); }
 
     HRESULT STDMETHODCALLTYPE GetTitle(IShellItemArray*, LPWSTR* title) override {
-        return SHStrDupW(target ? target->title : L"Shadrowsily · Chuyển đổi tài liệu", title);
+        return SHStrDupW(target ? target->title : L"Shadrovert", title);
     }
     HRESULT STDMETHODCALLTYPE GetIcon(IShellItemArray*, LPWSTR* icon) override {
         *icon = nullptr;

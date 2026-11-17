@@ -1,12 +1,12 @@
-# Chuyển đổi tài liệu
+# Shadrovert
 
-Ứng dụng Windows giúp chuyển đổi Word, PDF và ảnh ngay trên máy. Dự án phục vụ các thao tác thường gặp như xuất báo cáo Word sang PDF, gộp ảnh chứng từ thành một tài liệu, hoặc lấy từng trang PDF để chèn vào bản trình bày. Ứng dụng có giao diện tiếng Việt và xử lý tệp cục bộ.
+Shadrovert là ứng dụng Windows giúp chuyển đổi Word, PDF và ảnh ngay trên máy. Dự án phục vụ các thao tác thường gặp như xuất báo cáo Word sang PDF, gộp ảnh chứng từ thành một tài liệu, hoặc lấy từng trang PDF để chèn vào bản trình bày. Ứng dụng có giao diện tiếng Việt và xử lý tệp cục bộ.
 
 ## Chuyển đổi ngay từ menu chuột phải
 
-Sau khi cài tích hợp trên Windows 11 x64, bấm chuột phải vào một tệp được hỗ trợ ngay trong File Explorer, chọn **Chuyển đổi tài liệu**, rồi chọn định dạng đích. Bạn có thể bắt đầu ngay tại thư mục đang xem mà không cần mở cửa sổ chính của ứng dụng và tìm lại tệp.
+Sau khi cài tích hợp trên Windows 11 x64, bấm chuột phải vào một tệp được hỗ trợ ngay trong File Explorer, chọn **Shadrovert**, rồi chọn định dạng đích. Bạn có thể bắt đầu ngay tại thư mục đang xem mà không cần mở cửa sổ chính của ứng dụng và tìm lại tệp.
 
-Ví dụ, để gửi một báo cáo Word dưới dạng PDF, bấm chuột phải vào **BaoCao.docx** → **Chuyển đổi tài liệu** → **PDF**. Hộp thoại lưu mở ngay ở thư mục của tệp gốc và điền sẵn tên **BaoCao.pdf**. Bạn chỉ cần bấm **Lưu**. Cửa sổ tiến trình tự đóng khi hoàn tất.
+Ví dụ, để gửi một báo cáo Word dưới dạng PDF, bấm chuột phải vào **BaoCao.docx** → **Shadrovert** → **Sang PDF**. Hộp thoại lưu mở ngay ở thư mục của tệp gốc và điền sẵn tên **BaoCao.pdf**. Bạn chỉ cần bấm **Lưu**. Cửa sổ tiến trình tự đóng khi hoàn tất.
 
 Menu xử lý từng tệp một. Khi xuất PDF thành ảnh từ menu, ứng dụng dùng 300 DPI.
 
@@ -57,7 +57,7 @@ $makeappx = 'C:\path\to\MakeAppx.exe'
 .\.venv\Scripts\python.exe explorer\build_setup.py --cxx $cxx
 ~~~
 
-Chạy **dist/CaiDat-ChuyenDoiTaiLieu.exe** và xác nhận quyền quản trị để cài gói MSIX chưa ký do bạn tự build. Để gỡ, vào **Settings → Apps → Installed apps → Chuyển đổi tài liệu**.
+Chạy **dist/CaiDat-Shadrovert.exe** và xác nhận quyền quản trị để cài gói MSIX chưa ký do bạn tự build. Để gỡ, vào **Settings → Apps → Installed apps → Shadrovert**.
 
 ## Cấu trúc mã nguồn
 

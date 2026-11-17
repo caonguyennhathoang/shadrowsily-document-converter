@@ -6,7 +6,7 @@
 namespace {
 
 int notify(const wchar_t* message, bool success = false) {
-    MessageBoxW(nullptr, message, L"Shadrowsily · Cài đặt Chuyển đổi tài liệu",
+    MessageBoxW(nullptr, message, L"Cài đặt Shadrovert",
                 MB_OK | (success ? MB_ICONINFORMATION : MB_ICONERROR));
     return success ? 0 : 1;
 }
@@ -66,5 +66,5 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
     const bool installed = write_package(package.c_str()) && install_package(package.c_str());
     DeleteFileW(package.c_str());
     if (!installed) return notify(L"Cài đặt thất bại. Hãy đóng ứng dụng và thử lại.");
-    return notify(L"Đã cài Chuyển đổi tài liệu và menu chuột phải.", true);
+    return notify(L"Đã cài Shadrovert và menu chuột phải.", true);
 }
