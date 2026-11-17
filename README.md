@@ -1,4 +1,4 @@
-# Chuyển đổi tài liệu · Shadrowsily
+# Chuyển đổi tài liệu
 
 Ứng dụng Windows giúp chuyển đổi Word, PDF và ảnh ngay trên máy. Dự án phục vụ các thao tác thường gặp như xuất báo cáo Word sang PDF, gộp ảnh chứng từ thành một tài liệu, hoặc lấy từng trang PDF để chèn vào bản trình bày. Ứng dụng có giao diện tiếng Việt và xử lý tệp cục bộ.
 
