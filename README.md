@@ -2,6 +2,14 @@
 
 Ứng dụng Windows giúp chuyển đổi Word, PDF và ảnh ngay trên máy. Dự án phục vụ các thao tác thường gặp như xuất báo cáo Word sang PDF, gộp ảnh chứng từ thành một tài liệu, hoặc lấy từng trang PDF để chèn vào bản trình bày. Ứng dụng có giao diện tiếng Việt và xử lý tệp cục bộ.
 
+## Chuyển đổi ngay từ menu chuột phải
+
+Sau khi cài tích hợp trên Windows 11 x64, bấm chuột phải vào một tệp được hỗ trợ ngay trong File Explorer, chọn **Chuyển đổi tài liệu**, rồi chọn định dạng đích. Bạn có thể bắt đầu ngay tại thư mục đang xem mà không cần mở cửa sổ chính của ứng dụng và tìm lại tệp.
+
+Ví dụ, để gửi một báo cáo Word dưới dạng PDF, bấm chuột phải vào **BaoCao.docx** → **Chuyển đổi tài liệu** → **PDF**. Hộp thoại lưu mở ngay ở thư mục của tệp gốc và điền sẵn tên **BaoCao.pdf**. Bạn chỉ cần bấm **Lưu**. Cửa sổ tiến trình tự đóng khi hoàn tất.
+
+Menu xử lý từng tệp một. Khi xuất PDF thành ảnh từ menu, ứng dụng dùng 300 DPI.
+
 ## Tính năng
 
 | Chế độ | Cách hoạt động |
@@ -10,7 +18,6 @@
 | PDF → Word | Tạo DOCX từ PDF. Với PDF có metadata nhận diện Microsoft PowerPoint, ứng dụng dùng ảnh nền cho từng trang và đặt chữ ngang có sẵn vào các hộp văn bản có thể chỉnh sửa. |
 | Ảnh → PDF | Gộp ảnh JPG, PNG, WebP, BMP, TIFF, GIF, JPEG 2000 hoặc AVIF thành một PDF. Có thể sắp xếp lại ảnh trước khi xuất. |
 | PDF → Ảnh | Xuất từng trang thành PNG, JPEG, TIFF, BMP hoặc WebP ở 72, 150, 200, 300 hoặc 600 DPI. |
-| Menu chuột phải | Trên Windows 11 x64, mục **Chuyển đổi tài liệu** trong File Explorer cho phép chọn định dạng đích và nơi lưu cho một tệp. Chế độ PDF → Ảnh trong menu dùng 300 DPI. |
 
 Bố cục PDF → Word có thể thay đổi, nhất là với bảng phức tạp hoặc phông chữ thiếu trên máy. PDF scan cần được OCR trước nếu muốn sửa chữ trong Word.
 
