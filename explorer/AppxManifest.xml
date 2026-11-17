@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+         xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10"
+         xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4"
+         xmlns:desktop5="http://schemas.microsoft.com/appx/manifest/desktop/windows10/5"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         IgnorableNamespaces="uap uap10 com desktop4 desktop5 rescap">
+  <Identity Name="ChuyenDoiTaiLieu.Local" Publisher="CN=ChuyenDoiTaiLieu, OID.2.25.311729368913984317654407730594956997722=1"
+            Version="1.0.9.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>Chuyển đổi tài liệu · Shadrowsily</DisplayName>
+    <PublisherDisplayName>Shadrowsily</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="vi-VN" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.22621.0" MaxVersionTested="10.0.26100.0" />
+  </Dependencies>
+  <Applications>
+    <Application Id="Converter" Executable="ChuyenDoiTaiLieu.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="packagedClassicApp">
+      <uap:VisualElements DisplayName="Chuyển đổi tài liệu · Shadrowsily" Description="Chuyển đổi Word, PDF và ảnh — Shadrowsily"
+                          BackgroundColor="transparent" Square150x150Logo="Assets\Square150.png" Square44x44Logo="Assets\Square44.png" />
+      <Extensions>
+        <com:Extension Category="windows.comServer">
+          <com:ComServer>
+            <com:SurrogateServer DisplayName="Shadrowsily">
+              <com:Class Id="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" Path="ExplorerCommand.dll" ThreadingModel="STA" />
+              <com:Class Id="19787C67-4ED8-4945-B43D-36EF4C1DD7D5" Path="ExplorerCommand.dll" ThreadingModel="STA" />
+            </com:SurrogateServer>
+          </com:ComServer>
+        </com:Extension>
+        <desktop4:Extension Category="windows.fileExplorerContextMenus">
+          <desktop4:FileExplorerContextMenus>
+            <desktop5:ItemType Type=".pdf"><desktop5:Verb Id="FromPdf" Clsid="19787C67-4ED8-4945-B43D-36EF4C1DD7D5" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".doc"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".docx"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".jpg"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".jpeg"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".png"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".webp"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".bmp"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".tif"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".tiff"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".gif"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".jp2"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+            <desktop5:ItemType Type=".avif"><desktop5:Verb Id="ToPdf" Clsid="7B657271-E79A-4DB5-95F3-2945ADFBA3E1" /></desktop5:ItemType>
+          </desktop4:FileExplorerContextMenus>
+        </desktop4:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>

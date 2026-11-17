@@ -1,0 +1,6 @@
+img2pdf==0.6.3
+pdf2docx==0.5.13
+Pillow==13.0.0
+pypdfium2==5.15.1
+PyMuPDF>=1.26.7,<2
+pywin32==312
